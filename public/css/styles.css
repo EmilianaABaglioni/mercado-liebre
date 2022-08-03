@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+:root {
+    --yellow: #EAC926;
+    --greydark: #666;
+    --lightblue: #1259c3;
+    --greylight: #ebebeb;
+    --green: #39b54a;
+}
+
+i {
+    padding: 2px;
+}
+
+p {
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+    padding: 15px;
+}
+
+.logo,
+.search {
+    width: 50%;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 12px;
+    position: relative;
+}
+
+.search input {
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: white;
+    border-radius: 8%;
+    border: none;
+    font-size: 15px;
+    position: absolute;
+    right: 15px;
+    bottom: 17px;
+    padding: 0;
+}
+
+.box-topheader {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+nav i {
+    margin: 1px;
+}
+
+.burger {
+    color: white;
+    background-color: var(--lightblue);
+    display: block;
+    max-width: 40px;
+    font-size: 18px;
+    padding: 5px 0;
+    margin: auto;
+    border-radius: 8px;
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+main article {
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.box-price {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+.price {
+    font-size: 18px;
+    width: 60%;
+}
+
+.discount {
+    font-size: 14px;
+    color: var(--green);
+    width: 30%;
+}
+
+.description {
+    display: none;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fa-truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    color: #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+footer {
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+footer i {
+    color: var(--lightblue);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer i:hover {
+    color: var(--yellow);
+    transition-duration: 100ms;
+}
+
+footer section {
+    padding: 15px;
+}
+
+.copyright {
+    padding: 20px;
+    text-align: left;
+}
+
+@media (min-width: 361px) {
+
+    .logo,
+    .search,
+    div p {
+        width: 100%;
+    }
+
+    .search {
+        align-items: flex-start;
+    }
+
+    .search input {
+        width: 100%;
+        padding: 5px 5px;
+    }
+
+    form button {
+        bottom: 30%;
+    }
+
+    .box-topheader {
+        flex-wrap: nowrap;
+    }
+
+    nav,
+    ul {
+        display: flex;
+        margin: 0 10px;
+    }
+
+    .box-left {
+        width: 50%;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .box-right {
+        width: 50%;
+        padding: 0;
+        justify-content: flex-end;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    main section article {
+        width: 45%;
+    }
+
+    article {
+        transition: all 1s;
+    }
+
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    article:hover .fa-truck {
+        transition-duration: 1s;
+        transform: rotate(-90deg);
+    }
+
+    article:hover .description {
+        display: block;
+    }
+
+    .box-article {
+        box-sizing: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 769px) {
+    main section article {
+        width: 22%;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 5px 15px;
+    }
+
+    footer section {
+        width: 33.3%;
+        font-size: 12px;
+        padding: 15px 5px;
+    }
+
+    .copyright {
+        width: 100%;
+        padding: 10px;
+    }
+}

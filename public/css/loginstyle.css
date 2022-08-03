@@ -1,0 +1,52 @@
+/*FORMULARIO*/
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:50px 10%;
+    font-size: 14px;
+    height: 50vh;
+    border: solid 1px var(--greydark);
+    border-radius: 5px;
+    background-color: gray;
+    box-shadow: 1px 1px 40px 10px gray;
+}
+
+.form input {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.button-login:hover {
+    background-color:#1259c3;
+    transition-duration: 100ms;
+    color: white;
+    font-weight: bold;
+}
+
+.forget-password {
+    font-size: 12px;
+}
+
+.form label {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+@media (min-width: 361px) {
+    .form input{
+        width: 50%;
+    }
+
+    .form {
+        margin:50px 20%;
+    }
+}
+
+@media (min-width: 769px) {
+
+}

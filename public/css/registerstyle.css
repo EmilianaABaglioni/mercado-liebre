@@ -1,0 +1,189 @@
+/*FORMULARIO*/
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: 100%;
+    font-size: 12px;
+    margin: 15px 20px;
+    flex-direction: column;
+}
+
+.data-user input {
+    justify-content: center;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin-bottom: 10px;
+
+}
+
+.data-user label {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.birth {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    position: relative;
+    margin-top: 15px;
+}
+
+.birth i {
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    color: var(--greydark);
+}
+
+.nationality {
+    background-color:white;
+    border: solid 0.5px rgba(0, 0, 50, 0.1);
+    padding: 3px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.profile-user label {
+    padding: 0 10px;
+}
+
+.profile-user input {
+    margin-right: 10px;
+}
+
+.preferences {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.preferences label {
+    width: 100%;
+    margin: 5px 10px;
+}
+
+.preferences input {
+    margin-right: 5px;
+}
+
+.img-user {
+    margin-bottom: 10px;
+}
+
+.password {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.password label,
+.password input {
+    width: 70%;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.buttons input {
+    width: 20%;
+    padding: 10px;
+    margin-left: 10px;
+    border: solid 0.5px #666;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.send:hover,
+.delete:hover {
+    transition-duration: 100ms;
+    background-color: #1259c3;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.login {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (min-width: 361px) {
+    .form {
+        margin-top: 25px;
+    }
+
+    .data-user input {
+        width: 50%;
+    }
+
+    .birth {
+        width: 100%;
+    }
+
+    .birth i {
+        right: 26%;
+    }
+
+    .data-user,
+    .birth {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-user,
+    .preferences,
+    .img-user,
+    .text,
+    .nationality {
+        margin-left: 25%;
+    }
+
+    .password {
+        border: none;
+    }
+
+    .password input {
+        width: 40%;
+    }
+
+    .password label{
+        width: 15%;
+    }
+
+    .password label:hover {
+        padding: 5px;
+        border: none;
+        color: #1259c3;
+        background-color: rgba(0, 0, 50, 0.1)
+    }
+
+    .buttons input {
+        width: 10%;
+    }
+}
+
+@media (min-width: 769px) {
+    .form input {
+        padding: 5px;
+    }
+}
